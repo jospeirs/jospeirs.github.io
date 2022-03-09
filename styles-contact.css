@@ -60,10 +60,10 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background: url(images/bricks_background.jpg)
+  background: url(images/fronds.jpg)
 	center center fixed no-repeat;
 	background-size: cover;
-	
+	font-family: 'Times New Roman', Times, serif;
 	
 }
 
@@ -71,15 +71,15 @@ html, body {
     width: 800px;
 	padding: 2%;
     margin: 100px auto;
- 	background: rgba(0, 150, 178, .75); /*this uses opacity of 75% for the background color*/
+ 	background: rgba(171, 216, 186, 0.75); /*this uses opacity of 75% for the background color*/
 	text-align: center;
-	border: 4px dashed white;
+	/* removed -- border: 4px dashed white; */
 }
 
    
 #logo {
     margin-bottom: 16px;
-	border: 3px dashed red;
+	/* removed -- border: 3px dashed red; */
 	text-align: center;
 }
 
@@ -113,8 +113,8 @@ nav{
 	font-size: 1.2em;
 	width: 400px;
 	margin: 0 auto;
-	border: solid white;
-	border-width: 3px 0;
+	border: solid rgb(255, 255, 255);
+	border-width: 1px 0;
 	text-align: center;
 	margin-top: 2em;
 
@@ -130,12 +130,12 @@ nav a{
 }
 
 a{
-	color:blueviolet;
+	color:rgb(255, 255, 255);
 	text-decoration: none;
 	font-weight: bold;
 }
 
 a:hover{
-	color:black;
-	background:pink;
+	/*removed -- color:black; */
+	background:rgba(144, 180, 156, 0.75);
 }
