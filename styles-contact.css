@@ -63,7 +63,7 @@ html, body {
   background: url(images/fronds.jpg)
 	center center fixed no-repeat;
 	background-size: cover;
-	font-family: 'Helvetica', sans-serif;
+	font-family: 'Garamond', serif;
 	
 }
 
@@ -71,7 +71,7 @@ html, body {
     width: 800px;
 	padding: 2%;
     margin: 100px auto;
- 	background: rgba(3, 22, 9, 0.75); /*this uses opacity of 75% for the background color*/
+ 	background: rgba(3, 22, 9, 0.6); /*this uses opacity of 75% for the background color*/
 	text-align: center;
 	/* removed -- border: 4px dashed white; */
 }
@@ -95,7 +95,7 @@ h2 {
 	 /* FONT-FAMILY GOES HERE CHOOSE FROM ADOBE FONTS OR GOOGLE FONTS */
 	font-size: 1.5em;
     line-height: 1.4;
-    color: rgba(186, 233, 202, 0.75);
+    color: #fff;
     padding: 0px 0px;
     margin: 0px auto 25px auto;
 }
