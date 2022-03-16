@@ -63,7 +63,7 @@ html, body {
   background: url(images/fronds.jpg)
 	center center fixed no-repeat;
 	background-size: cover;
-	font-family: 'Times New Roman', Times, serif;
+	font-family: 'Helvetica', sans-serif;
 	
 }
 
@@ -95,7 +95,7 @@ h2 {
 	 /* FONT-FAMILY GOES HERE CHOOSE FROM ADOBE FONTS OR GOOGLE FONTS */
 	font-size: 1.5em;
     line-height: 1.4;
-    color: rgba(74, 236, 128, 0.75);
+    color: rgba(186, 233, 202, 0.75);
     padding: 0px 0px;
     margin: 0px auto 25px auto;
 }
