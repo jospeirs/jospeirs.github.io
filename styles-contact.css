@@ -88,14 +88,14 @@ h1 {
 	font-family: times, serif;
 	font-size: 2em;
     margin: 0px auto 10px auto;
-    color: rgba(145, 224, 105, 0.75);
+    color: #fff;
 }
 
 h2 {
 	 /* FONT-FAMILY GOES HERE CHOOSE FROM ADOBE FONTS OR GOOGLE FONTS */
 	font-size: 1.5em;
     line-height: 1.4;
-    color: rgba(125, 196, 90, 0.75);
+    color: rgba(74, 236, 128, 0.75);
     padding: 0px 0px;
     margin: 0px auto 25px auto;
 }
@@ -105,7 +105,7 @@ p {
 	font-family: times, serif;		
 	font-size: 1.2em;
     line-height: 1.6;
-    color: rgba(175, 228, 148, 0.75);
+    color: #fff;
 }
     
 nav{
@@ -136,6 +136,6 @@ a{
 }
 
 a:hover{
-	color:rgba(52, 169, 53, 0.75);
+	color:rgba(74, 236, 128, 0.75);
 	/*removed -- background:rgba(5, 53, 21, 0.75); */
 }
