@@ -1,0 +1,88 @@
+/*CSS DOCUMENT*/
+
+div.container {
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	max-width: 80%;
+}
+
+header {
+	flex-basis: 100%;
+	margin-top: 2em;
+	margin-left: 1em;
+	margin-bottom: -1.25em;
+}
+
+p {
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+h2 {
+	margin-top: 2em;
+	margin-left: 0.65em;
+}
+
+h3 {
+	margin-left: 1em;
+	margin-bottom: -0.75em;
+}
+
+footer {
+	border-top: 1px solid #222;
+	flex-basis: 100%;
+	margin-top: 4em;
+	margin-left: 1em;
+	p {
+		margin-left: 0em;
+	}
+}
+
+ol {
+	li {
+		margin-left: -2em;
+		p {
+			margin-left: 0.5em;
+		}
+	}
+}
+
+a {
+	text-decoration: none;
+	color:black;
+}
+
+article {
+	flex-basis: 40em;
+	flex-grow: 1;
+	flex-shrink: 0;
+}
+
+aside {
+	flex-basis: 10em;
+	flex-grow: 1;
+	flex-shrink: 0;
+	}
+
+section {
+	margin-top: 1em;
+	padding: 0.1em;
+	background-color: #ebebeb
+}
+
+body {
+	font-family: sans-serif;
+	line-height: 1.4em;
+	color: #222;
+	background-color: #fafafa;
+	box-sizing: border-box;
+	}
+
+img {
+	width: 100%;
+}
+
+figure {
+	margin: 1em;
+}
