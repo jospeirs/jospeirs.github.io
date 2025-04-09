@@ -60,7 +60,7 @@ article {
 }
 
 aside {
-	flex-basis: 10em;
+	flex-basis: 15em;
 	flex-grow: 1;
 	flex-shrink: 0;
 	}
@@ -85,4 +85,14 @@ img {
 
 figure {
 	margin: 1em;
+}
+
+@media screen and (max-width: 50em) {
+	article {
+		flex-basis: 25em;
+	}
+
+	aside {
+		margin-left: 1em;
+	}
 }
