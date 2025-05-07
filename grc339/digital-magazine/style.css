@@ -2,7 +2,7 @@
 
 html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
 
-div.container {
+div.container, div.home-container {
     max-width: 60em;
     margin: auto;
 }
@@ -14,39 +14,44 @@ h1 {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 nav {
     margin-left: 0.1em;
     margin-bottom: 1em;
-    p {
-        text-decoration: none;
-        font-weight: bold;
-        color:#46729c;
-        margin-bottom: 0.25em;
-    }
+}
+nav a {
+    color: #46729c;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-decoration: none;
+    margin-bottom: 0.25em;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
 }
 
 section {
     margin-bottom: 2em;
-    h2{
-        margin-top: 0.1em;
-    }
 }
 
-main {
-    h2 {
-        font-size: 3em;
-        font-family: serif;
-        font-weight: bold;
-        margin-left: 0.1em;
-    }
+section h2 {
+    margin-top: 0.1em;
 }
 
-/* all article headlines */
-h2 {
+main h2 {
+    font-size: 3em;
+    font-family: serif;
+    font-weight: bold;
+    margin-left: 0.1em;
+    color:#46729c;
+}
+
+.secondary h2 {
     margin-left: 0.25em;
-
     text-decoration: none;
     font-size: 2em;
     font-family: serif;
@@ -54,19 +59,16 @@ h2 {
     color:#46729c;
 }
 
-/* nav and article descriptions */
 p {
     font-family: sans-serif;
     margin-left: 0.5em;
 }
 
-tertiary {
-    h2 {
-        border-top: 1px solid #46729c;
-        padding-top: 0.25em;
-        font-size: 1.25em;
-        margin: 0em 0.4em;
-    }
+.tertiary h2 {
+    border-top: 1px solid #46729c;
+    padding-top: 0.25em;
+    font-size: 1.25em;
+    margin: 0em 0.4em;
 }
 
 body {
@@ -75,9 +77,11 @@ body {
 }
 
 footer {
+    font-family: sans-serif;
     background-color: #46729c;
     color: #ffffff;
-    padding: 0.8em 0.25em;
+    padding: 0.8em 0.4em;
+    margin: 0;
 }
 
 img {
@@ -86,38 +90,48 @@ img {
 }
 
 /*mainstory*/
-article {
-    h2 {
-        font-size: 3em;
-        margin-left: 0.15em;
-        margin-bottom: 0.25em;
-    }
-    figcaption {
-        margin: 0.25em 0.35em 2em;
-        font-family: sans-serif;
-        font-style: italic;
-        color: #606060
-    }
-    p {
-        margin-bottom: 1em;
-    }
+article h2 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-left: 0.15em;
+    margin-bottom: 0em;
+    color: #46729c;
 }
 
-aside {
+figcaption {
+    margin: 0.25em 0.35em 2em;
+    font-family: sans-serif;
+    font-style: italic;
+    color: #606060
+}
+
+article p {
+    margin-bottom: 1em;
+}
+
+.mss {
     padding: 1em 0.5em;
     background-color: #cbcdfa;
-    h2{
-        /*margin-top: 0.25em;*/
-        margin-left: 0.5em;
-        font-size: 1em;
-    }
-    p {
-        margin-bottom: 2em;
-    }
-    section {
-        margin: 0;
-    }
 }
+.mss h2 {
+    font-weight: bold;
+    color: #46729c;
+}
+
+aside h2 {
+    /*margin-top: 0.25em;*/
+    font-weight: bold;
+    color: #46729c;
+    margin-left: 0.5em;
+    font-size: 1em;
+}
+aside p {
+    margin-bottom: 2em;
+}
+aside section {
+    margin: 0;
+}
+
 
 
 /*media query*/
@@ -125,43 +139,122 @@ aside {
 @media screen and (min-width: 50em) {
     header {
         margin-left: 0em;
-        h1 {
-            margin-left: 0em;
-        }
     }
-    
-    main {
-        a {
-            h2 {
-                margin-left: 0em;
-            }
-        }
-    }
-
-    h2 {
+    h1 {
         margin-left: 0em;
     }
     
-    tertiary {
-        h2 {
-            margin: 0em;
-        }
+    nav li {
+        display: inline;
+        margin-right: 1em;
+    }
+
+    main h2{
+        margin-left: 0em;
+    }
+
+    .secondary h2 {
+        margin-left: 0em;
+    }
+    
+    .tertiary h2 {
+        margin: 0em;
     }
 
     p {
         margin-left: 0em;
     }
-    article{
-        h2 {
-            margin-left: 0;
-        }
-        figcaption {
-            margin-left: 0;
-        }
+    article h2{
+        margin-left: 0;
     }
-    aside {
-        h2 {
-            margin-left: 0;
-        }
+    figcaption {
+        margin-left: 0;
+    }
+    aside h2 {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (min-width: 60em) {
+    
+    div.home-container {
+        max-width: 80em;
+        padding: 0 1em;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 1em;
+    }
+
+    div.container {
+        max-width: 60em;
+        padding: 0 1em;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 1em;
+    }
+
+    header, footer {
+        grid-column: 1/3;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+    }
+
+    .mainstory {
+        grid-column: 2/4;
+        grid-row: 1/3;
+        display: flex;
+    }
+
+    .mainstory a {
+        flex: 1 0 12em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainstory a figure {
+        flex: 1 0 12em;
+        display: flex;
+    }
+
+    .mainstory a figure img {
+        object-fit: cover;
+    }
+
+    .mainstory a h2 {
+        flex: 0 0 1em;
+    }
+
+    .mainstory a p {
+        flex: 0 0 4em;
+    }
+    .secondary {
+        display: flex;
+    }
+
+    .secondary a {
+        flex: 1 0 12em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secondary a figure {
+        flex: 1 0 12em;
+        display: flex;
+    }
+
+    .secondary a figure img {
+        object-fit: cover;
+    }
+
+    .secondary a h2 {
+        flex: 0 0 1em;
+    }
+
+    .secondary a p {
+        flex: 0 0 4em;
     }
 }
