@@ -257,4 +257,12 @@ aside section {
     .secondary a p {
         flex: 0 0 4em;
     }
+
+    nav {
+        margin: 0;
+    }
+    
+    li {
+        margin: 0;
+    }
 }
