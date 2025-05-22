@@ -2,9 +2,17 @@
 
 html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
 
+body {
+    background-color: #2e2e2e;
+}
+
 div.container, div.home-container {
     max-width: 60em;
     margin: auto;
+}
+
+header a h1 img {
+    width: 16em;
 }
 
 h1 {
@@ -22,16 +30,21 @@ nav {
     margin-bottom: 1em;
 }
 nav a {
-    color: #46729c;
-    font-weight: bold;
-    font-family: sans-serif;
-    text-decoration: none;
+    color: #FFEd09;
+    font-family: "eurostile-extended", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     margin-bottom: 0.25em;
 }
 
 ul {
     list-style-type: none;
     padding-left: 0;
+}
+
+li {
+    margin-left: 0.5em;
+    margin-bottom: 0.1em;
 }
 
 section {
@@ -43,32 +56,47 @@ section h2 {
 }
 
 main h2 {
-    font-size: 3em;
-    font-family: serif;
-    font-weight: bold;
+    font-size: 2em;
+    font-family: "eurostile-extended", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     margin-left: 0.1em;
-    color:#46729c;
+    margin-bottom: 0.2em;
+    color:#FFEd09;
 }
 
 .secondary h2 {
     margin-left: 0.25em;
     text-decoration: none;
-    font-size: 2em;
-    font-family: serif;
-    font-weight: bold;
-    color:#46729c;
+    font-size: 1.3em;
+    font-family: "eurostile-extended", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color:#FFEd09;
+}
+
+.secondary p {
+    font-size: 0.85em;
 }
 
 p {
-    font-family: sans-serif;
+    font-family: itc-avant-garde-gothic-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
     margin-left: 0.5em;
+    color: #f6f9f4;
 }
 
 .tertiary h2 {
-    border-top: 1px solid #46729c;
+    border-top: 1px solid #FFEd09;
     padding-top: 0.25em;
-    font-size: 1.25em;
+    font-size: 1em;
     margin: 0em 0.4em;
+    color: #f6f9f4
+}
+
+.tertiary p {
+    font-size: 0.7em;
 }
 
 body {
@@ -77,9 +105,11 @@ body {
 }
 
 footer {
-    font-family: sans-serif;
-    background-color: #46729c;
-    color: #ffffff;
+    font-family: itc-avant-garde-gothic-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: #EF0000;
+    color: #f6f9f4;
     padding: 0.8em 0.4em;
     margin: 0;
 }
@@ -92,15 +122,19 @@ img {
 /*mainstory*/
 article h2 {
     font-size: 3em;
-    font-weight: bold;
+    font-family: "eurostile-extended", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 0;
     margin-left: 0.15em;
-    margin-bottom: 0em;
-    color: #46729c;
+    margin-bottom: 0.5em;
+    color: #FFEd09;
 }
 
 figcaption {
-    margin: 0.25em 0.35em 2em;
-    font-family: sans-serif;
+    margin: 0.25em 0.35em 1em;
+    font-family: itc-avant-garde-gothic-pro, sans-serif;
+    font-weight: 300;
     font-style: italic;
     color: #606060
 }
@@ -110,18 +144,26 @@ article p {
 }
 
 .mss {
+    /*border-top: 1px solid #606060;*/
     padding: 1em 0.5em;
-    background-color: #cbcdfa;
+    background-color: #606060;
 }
 .mss h2 {
-    font-weight: bold;
-    color: #46729c;
+    color: #FFEd09;
+}
+
+.mss p {
+    font-size: 0.7em;
+    color: #f6f9f4;
+    margin-bottom: 0;
 }
 
 aside h2 {
     /*margin-top: 0.25em;*/
-    font-weight: bold;
-    color: #46729c;
+    font-family: "eurostile-extended", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #EF0000;
     margin-left: 0.5em;
     font-size: 1em;
 }
