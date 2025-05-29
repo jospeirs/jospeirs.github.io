@@ -175,6 +175,123 @@ aside section {
 }
 
 
+/*photo gallery*/
+
+div.content{
+main {
+    position: relative;
+    overflow: hidden;
+    /*padding-bottom: calc(66.4% + 5em)*/;
+}
+main.figure {
+    margin: 1em;
+    width: calc(100%-2em);
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+main.nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.2em;
+}
+
+input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
+input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
+input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
+input:nth-of-type(4):checked ~ main figure:nth-of-type(4),
+input:nth-of-type(5):checked ~ main figure:nth-of-type(5),
+input:nth-of-type(6):checked ~ main figure:nth-of-type(6),
+input:nth-of-type(7):checked ~ main figure:nth-of-type(7),
+input:nth-of-type(8):checked ~ main figure:nth-of-type(8){
+    opacity: 1;
+}
+
+input {
+    display: none;
+}
+}
+
+
+/*newsletter*/
+
+section.personal-info,
+section.option {
+    margin-top: 2em;
+}
+
+section.personal-info h2 {
+    font-family: "eurostile-extended", sans-serif;
+    color: #FFEd09;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+section.option {
+    border-left: 1px solid #606060;
+    padding-top: 3em;
+    padding-left: 1em;
+}
+
+section.option h2 {
+    font-family: "eurostile-extended", sans-serif;
+    color: #FFEd09;
+    margin-bottom: 1em;
+}
+
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+section ul li {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+    align-items: center;
+}
+
+section.personal-info ul li label,
+section.order ul li label {
+    flex: 0 0 10em;
+    font-family: itc-avant-garde-gothic-pro, sans-serif;
+    color: #f6f9f4;
+    margin-right: 0.5em;
+}
+
+section ul li input[type="text"],
+section ul li input[type="email"],
+section ul li input[type="tel"],
+section ul li select {
+    flex: 1 0 20em;
+    padding: 0.4em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+section ul li select {
+    background-color: #fff;
+}
+
+section.option ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.option ul li {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    flex: 1 0 15em;
+}
+
+section.option ul li label {
+    color: #f6f9f4;
+    font-family: itc-avant-garde-gothic-pro, sans-serif;
+}
 
 /*media query*/
 
@@ -307,4 +424,55 @@ aside section {
     li {
         margin: 0;
     }
+}
+
+
+/* Clean, functional photo gallery */
+.gallery {
+    position: relative;
+}
+
+.main-image {
+    position: relative;
+    height: auto;
+}
+
+.main-image figure {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+input#photo1:checked ~ .gallery .main-image figure:nth-of-type(1),
+input#photo2:checked ~ .gallery .main-image figure:nth-of-type(2),
+input#photo3:checked ~ .gallery .main-image figure:nth-of-type(3),
+input#photo4:checked ~ .gallery .main-image figure:nth-of-type(4),
+input#photo5:checked ~ .gallery .main-image figure:nth-of-type(5),
+input#photo6:checked ~ .gallery .main-image figure:nth-of-type(6),
+input#photo7:checked ~ .gallery .main-image figure:nth-of-type(7),
+input#photo8:checked ~ .gallery .main-image figure:nth-of-type(8) {
+    opacity: 1;
+    position: relative;
+    z-index: 1;
+}
+
+.thumbnails {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5em;
+    margin-top: 1em;
+}
+
+.thumbnails img {
+    width: 100%;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.thumbnails img:hover {
+    border-color: #FFEd09;
 }
